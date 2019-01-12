@@ -23,8 +23,8 @@ namespace API
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddDbContext<CatalagoContext>(optioms => 
-            optioms.UseSqlServer(Configuration.GetConnectionString("CatalogoSQL")));
+           // services.AddDbContext<CatalagoContext>(options => 
+          //  options.UseSqlServer(Configuration.GetConnectionString("CatalogoSQL")));
 
             services.AddScoped<CatalagoContext, CatalagoContext>();
 
